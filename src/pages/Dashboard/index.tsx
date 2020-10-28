@@ -7,10 +7,12 @@ import logoImg from '../../assets/logo.svg';
 import { Title, Form, Repositories } from './style';
 
 const Dashboard: React.FC = () => {
+
+  const [newRepo, setNewRepo] = useState('');
   const [repositories, setRepositories] = useState([]);
 
   function handleAddRepository() {
-    
+
   }
 
   return (
@@ -19,7 +21,7 @@ const Dashboard: React.FC = () => {
       <Title>Explore repositórios no Github</Title>
 
       <Form>
-        <input type="text" placeholder="Digite o nome do repositório" />
+        <input type="text" placeholder="Digite o nome do repositório" value={newRepo} onChange={e => setNewRepo(e.target.value)} />
         <button type="submit">Pesquisar</button>
       </Form>
 
