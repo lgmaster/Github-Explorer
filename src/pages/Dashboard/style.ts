@@ -4,7 +4,7 @@ import { shade } from 'polished';
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #3A3A3A;
+  color: #3a3a3a;
   max-width: 450px;
   line-height: 56px;
 
@@ -34,14 +34,14 @@ export const Form = styled.form`
     width: 210px;
     height: 70px;
     background: #04d361;
-    border-radius: 0 5px 5px 0; 
+    border-radius: 0 5px 5px 0;
     border: 0;
-    color: #FFF;
+    color: #fff;
     font-weight: bold;
     transition: background-color 0.2s;
 
     &:hover {
-      background: ${shade(0.2, '#04d361')}
+      background: ${shade(0.2, '#04d361')};
     }
   }
 `;
@@ -51,7 +51,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #FFF;
+    background: #fff;
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -77,7 +77,8 @@ export const Repositories = styled.div`
     }
 
     div {
-      margin-left: 16px;
+      margin: 0 16px;
+      flex: 1;
 
       strong {
         font-size: 20px;
@@ -86,7 +87,7 @@ export const Repositories = styled.div`
 
       p {
         font-size: 18px;
-        color: #A8A8B3;
+        color: #a8a8b3;
         margin-top: 4px;
       }
     }
@@ -95,6 +96,5 @@ export const Repositories = styled.div`
       margin-left: auto;
       color: #cbcbd6;
     }
-    
   }
 `;
